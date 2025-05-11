@@ -958,6 +958,7 @@ _validators = {
     "lines.markeredgecolor": validate_color_or_auto,  # default color
     "lines.markeredgewidth": validate_float,
     "lines.markersize":      validate_float,  # markersize, in points
+    "lines.zorder":          validate_float,  # line zorder
     "lines.antialiased":     validate_bool,  # antialiased (no jaggies)
     "lines.dash_joinstyle":  JoinStyle,
     "lines.solid_joinstyle": JoinStyle,

@@ -318,6 +318,7 @@ class Line2D(Artist):
                  pickradius=5,
                  drawstyle=None,
                  markevery=None,
+                 zorder=None,
                  **kwargs
                  ):
         """
@@ -343,6 +344,7 @@ class Line2D(Artist):
 
         linewidth = mpl._val_or_rc(linewidth, 'lines.linewidth')
         linestyle = mpl._val_or_rc(linestyle, 'lines.linestyle')
+        zorder = mpl._val_or_rc(zorder, 'lines.zorder')
         marker = mpl._val_or_rc(marker, 'lines.marker')
         color = mpl._val_or_rc(color, 'lines.color')
         markersize = mpl._val_or_rc(markersize, 'lines.markersize')
